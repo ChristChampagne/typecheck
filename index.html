@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Titulo del pagina</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+        integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center mt-3 mb-5">
+        <h1 style="color: white;"> Typing Check Caserote</h1>
+    </div>
+
+
+    <div class="container text-center mt-5">
+        <h1 class="mt-5 mb-5 text-center" style="color: white; text-align: center;" id="palabra_pantalla"></h1>
+        <input type="text" name="in_palabra" id="in_palabra" style="border-radius: 3rem; width: 25rem; height: 2rem;"
+            onchange="check_word()">
+    </div>
+
+</body>
+
+<script>
+
+    let oraciones = ["ana", "cara", "casa", "dedo", "elfo", "foco", "grillo", "ice cube"]
+
+
+    let palabra_ingresada = document.getElementById('in_palabra');
+    let posicion = 0
+
+    let palabra_pantalla = document.getElementById("palabra_pantalla");
+    palabra_pantalla.innerHTML = oraciones[posicion];
+    let array_palabras = Array.from(oraciones[posicion]);
+    let juego_terminado = false;
+
+    function check_word() {
+
+
+
+        if (palabra_ingresada.value == oraciones[posicion]) {
+
+            if (oraciones.length - 1 == posicion) {
+                palabra_pantalla.style.color = "green"
+                palabra_pantalla.innerHTML = "Juego terminado"
+                palabra_ingresada.value = ""
+                juego_terminado = true;
+
+            } else {
+                palabra_pantalla.style.color = "white"
+                console.log(oraciones.length - 1 + "/" + posicion);
+                posicion++;
+                palabra_ingresada.value = ""
+                palabra_pantalla.innerHTML = oraciones[posicion];
+
+            }
+
+        } else {
+
+            juego_terminado == true ? palabra_pantalla.style.color = "green" : palabra_pantalla.style.color = "red";
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+</script>
+<script src='https://unpkg.com/@popperjs/core@2'></script>
+<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
+    integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+    crossorigin='anonymous'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
+    integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
+    crossorigin='anonymous'></script>
+
+</html>

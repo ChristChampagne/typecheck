@@ -1,4 +1,12 @@
-# typecheck
-Verificador de palabras hecho con JavaScript y HTML
-Creado por Christian Eduardo Rodriguez Perez 4/Ene/2022
 
+# TypingCheck con JavaScript ⌨
+
+_Sencillo Verificador de palbras creado con lenguaje JavaScript puro & HTML_
+
+## Autores ✒️
+
+* **Christian Eduardo Rodriguez** - *Trabajo Principal* - [ChrisChampagne](https://github.com/ChristChampagne)
+
+## Gracias 🎁
+
+* Gracias por visitar mi proyecto, espero que te haya sido de ayuda. 📢

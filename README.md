@@ -1,11 +1,18 @@
 
 # TypingCheck con JavaScript ⌨
 
-_Sencillo Verificador de palbras creado con lenguaje JavaScript puro & HTML_
+_Sencillo Verificador de palabras creado con lenguaje JavaScript puro & HTML_
 
 ## Autores ✒️
 
-* **Christian Eduardo Rodriguez** - *Trabajo Principal* - [ChrisChampagne](https://github.com/ChristChampagne)
+* **Christian Eduardo Rodriguez**  - [ChrisChampagne](https://github.com/ChristChampagne)
+
+
+## Construido con 🛠️
+
+
+* [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) - JavaScript puro, sin librerias.
 
 ## Gracias 🎁
 
